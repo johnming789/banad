@@ -1,10 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: 轻量广告拦截规则
 ! Homepage: https://github.com/damengzhu/banad
-! Update Time: 2025-01-23 11:49:35（北京时间）
-! Total Count: 5566
+! Update Time: 2025-02-12 16:37:28（北京时间）
+! Total Count: 5580
 ! by: 酷安@大萌主
 ! domain name
+||chenhao97.top^
+||aizhantj.com^
+||usrzh.cn^
+||bjfsk.xyz^
 ||pinglun11223.xyz^
 ||btcili.top^
 ||17282.org^
@@ -4454,10 +4458,13 @@
 @@||guokr.com/apis/flowingboard/item/m_home_
 @@||sobot.com^
 @@||wan.douyu.com^
+||172.247.208.87/js/head.js
+||cupfox*.com/statics/js/ing.js
 ||qishula.com/css/ding.js
 ||adutp.com^$third-party
 ||aiqu2727.com/da/
 ||www.hdmp4.cc/js/foot.js
+||huakai2025.com/color.js
 .fun/*/17*/*.css?r=0$third-party
 .fun/*.jss?17*&r=0$third-party
 .top/*_*_vw*sbjs?$third-party
@@ -4471,7 +4478,7 @@
 ||browser.sentry-cdn.com^$third-party
 ||baidu.com/newspage/api/getmobads?
 ||ifeng.com/*&adids=
-.xyz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net
+.xyz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net|xiakexsw.com
 .buzz$domain=btsj6.com|yinghua8.tv|iyinghua.io|yhdmba.net
 .xyz/svelte?$third-party
 .xyz/alpine?$third-party
@@ -4613,8 +4620,8 @@ com:8891/c.php?s=*$third-party
 ||manhuabei.com/assets/xiwang.js
 ||yhdm.tv/bar/yfyh.js
 /js/js4.js
-.com:*.js?v=17$third-party
-.top/*/*.js?ts=$third-party
+.com:*.js?v=17*$third-party
+.top/*/*.js?ts=*$third-party
 /yinghuacd/bottom.js
 chusixs.com/5ygsh/
 /hm.js?$third-party
@@ -4821,6 +4828,7 @@ template/m1938pc/ads/*.js
 /js/statistics/user_ad.js
 /static/js/miniyyrtv-config.js
 ! element
+colamanga.com#@#.gg_950
 facebook.com#@#script:not([src]) + style + div[id]:not([class]):not([style])
 91porn.com#@#.vjs-preroll
 @@||developer.apple.com$generichide
@@ -4877,6 +4885,7 @@ zhidao.baidu.com##[class$='-ecom-ads']
 jingyan.baidu.com##.ad-card
 jingyan.baidu.com##.asp-self-rander > .asp-wrap
 jingyan.baidu.com###wrapper > .exp-container:nth-child(2) > aside.wgt-ad-guess.content-box:nth-child(2)
+baike.baidu.com###J-attention-wrapper
 baike.baidu.com##[onclick^="page.Mixedor.mixedOpen(this,"]
 baike.baidu.com##[class="qtqy-container"],[class="yitiao-content J-yitiao-content"],[class="yitiao-title"]
 zhidao.baidu.com###knowledge-answer-list
@@ -4886,6 +4895,7 @@ wen.baidu.com##.related-asp-new
 pan.baidu.com##A.active-msg
 pan.baidu.com##div.content DIV.photo-banner
 mobile.baidu.com##SECTION.detail-banner.banner-ck
+bing.com,cn.bing.net##li.b_ans:not(:has(h2))
 bing.com,cn.bing.net##.pa_sb
 bing.com,cn.bing.net##.adsMvC
 bing.com,cn.bing.net##.pa_sb
@@ -4968,6 +4978,8 @@ www.itdog.cn##IMG[src^='/upload/images/'][width='270'][height='80'],.gg_link,.to
 www.itdog.cn#%#window.alert=function(str){return}
 apkcombo.com##[data-d-ad-id]
 apkcombo.com##.diseanmevrtt
+izaiwen.cn##DIV[carousel-item]
+izaiwen.cn##.item-box
 huya.com###template
 huya.com##A[data-edesc='点击/推荐/左侧导航推荐图']
 smartapps.cn##swan-nest-banner-ad.ad-expose
@@ -5024,6 +5036,7 @@ www.hbhtyl.com##P[style^='width: 100% !important; margin: 0p']
 www.ydyse.com##.left,.bottom,.right,.ad,.adimage
 m.kdslife.com###app.Card.DownloadGuide
 m.guancha.cn##.g_header.go-to-app
+douyin.com##[class*='h5-ad-']
 thepaper.cn##[class^='index_footer_banner']
 www.wenshushu.cn##A[href^='https://wenshushu.cn/ad/']
 cupfox.app##IMG[class^='jsx-'][width='100%'],.swiper-wrapper img[class^='jsx-'][class*='a']:only-child,.cupfox-content.right,.cupfox-content.left
@@ -5407,7 +5420,6 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##[ad_dot_url]
 ##DIV#pos_nei_content
 ##[src*='zdmbl.xyz']
-##I.fa.fa-close
 ##IMG#diads
 ##[style='display: block; width: 100%; left: 0px; position: fixed; z-index: 2147483646; height: 49px; bottom: 132px;']
 ##body.fed-min-width.website-read > [style='bottom: 132px;']
@@ -5546,6 +5558,8 @@ javbus.com##.container-fluid:nth-child(9) > .row > .ad-list:nth-child(3)
 ##A.gotoclick[adv_id]
 ##[onclick='goAppHtml();']
 ##.ads-bg.ads-bg-home
+###kp-hid-sport-m.fed-part-layout.fed-back-whits.fed-hide-md.uk-alert
+###bc_dp_m
 ##DIV#playlistbtn[style='padding: 10px;']
 ##DIV#appss[style='padding:15px;']
 ##body.conch-adjust-fix #component
